@@ -17,7 +17,9 @@ edad = 28
 print ("Tengo", edad, "años de edad")
 
 ###Imprimiendo 2 variables en una misma sentencia (concadenacion)###
+print("Hola mi nombre es" ,nombre, "y tengo" ,edad)
 print("Hola mi nombre es " + nombre + " y tengo " + str(edad) + " años")
+print(f"Hola mi nombre es {nombre} y tengo {edad} años")
 
 #Actualizando la variable "nombre" (Mutable)
 nombre = "Cris"
@@ -27,5 +29,6 @@ print("Hola mi nuevo nombre es", nombre)
 nombre1 = input("¿Cual es tu nombre?\n")
 print("Tu nombre es", nombre1)
 
+###
 
 

@@ -49,8 +49,8 @@ print("La variable \"peso\" es de tipo:", type(peso)) #Type para saber el tipo d
 print("La variable \"complejo\" es de tipo:", type(complejo))  #Type para saber el tipo de variable.
 print("La variable \"carrera\" es de tipo:", type(carrera), "\n")  #Type para saber el tipo de variable.
 
-#03 - DATOS DE TIPO ARRAY (Objetos de Tipo Coleccion)
-print("### 04 - DATOS DE TIPO ARRAY ###\n")
+#04 - DATOS DE TIPO ARRAY (Objetos de Tipo Coleccion)
+print("### 04 - DATOS DE TIPO LISTAS ###\n")
 
 estudiantes = ["Matias", "Marco", "Cristobal", "Sebastian"] #Inicia una variable como una lista de elementos str.
 num = [1,2,3,4,5,6] #Inicia una variable como una lista de elementos int.
@@ -88,16 +88,16 @@ lenguaje = ["Javascript"] #Establece el elemento de la variable "lenguaje" en "J
 print("Nuevo valor del arreglo de un elemento:" ,lenguaje, "\n")
 
 #Acceder a un elemento especifico de la lista
-print("Poscicion 1:", estudiantes[0]) #Accede a la primera poscicion de la lista "estudiantes".
-print("Poscicion 2:", grupo[1]) #Accede a la segunda posicion de la lista "grupo".
+print("Poscicion 1 en la lista \"estudiantes\":", estudiantes[0]) #Accede a la primera poscicion de la lista "estudiantes".
+print("Poscicion 2 en la lista \"grupo\":", grupo[1]) #Accede a la segunda posicion de la lista "grupo".
 #print("Poscicion:", estudiantes[5])
-print("Poscicion -2:", estudiantes[-2], "\n") #Accede a la segunda poscicion de la lista "estudiantes", desde atras hacia adelante.
+print("Poscicion -2 en la lista \"estudiantes\":", estudiantes[-2], "\n") #Accede a la segunda poscicion de la lista "estudiantes", desde atras hacia adelante.
 
 estudiantes[3] = "Gabriela" #Reasigna el valor de un elemento de la lista.
 print("El arreglo de estudiantes es:" ,estudiantes)
 
 #Asigna valores de una lista a variables
-data_asig = [10023, "Programacion",1,True]
+data_asig = [10023, "Programacion", 1, True]
 cod,ramo,semestre,estado = data_asig
 print(ramo)
 
@@ -108,6 +108,60 @@ print("Suma de listas:" ,estudiantes + num)
 print(list("Phyton")) #Transforma el str "Phyton" en una lista.
 print(list(range(10))) #Imprime una lista de rango 10 (0-9)
 print("\n") #Salto de linea
+
+#05 - DATO DE TIPO TUPLAS
+print("### 05 - DATOS DE TIPO TUPLAS ###\n")
+
+grupo1 = ("Daniel", "Cristian", "Felipe", 200, 100, "Daniel")
+print("La variable \"grupo1\" es de tipo:", type(grupo1))
+
+grupo2 = ("Diego", "Boris", "2020", "Alberto", "100", "Pedro")
+
+#Accediendo al primer elemenot de la tupla.
+print(grupo1[0])
+
+#Consultando el elemento Daniel cuantas veces se encuentra en la tupla
+print("El elemento \"Daniel\" se repite:", grupo1.count("Daniel"), "veces")
+
+#Muestra el indice del primer elemento buscado
+print("El indice del elemento \"Daniel\" es:", grupo1.index("Daniel"))
+
+#Reasignando el primer elemento de la tupla
+#grupo1[0] = "Constanza" #Las tuplas no aceptan asignacion de elementos.
+#print(grupo1)
+
+#Se pueden sumar las tuplas
+print("Suma de tuplas:", grupo1 + grupo2)
+
+#obteniedo un trozo de la tupla
+print("Trozo de la tupla:", grupo2[0:3])
+
+#¿Entonces como no puedo modificar una tupla?
+grupo1 = list(grupo1)
+print("La tupla ahora es de tipo:", type(grupo1), "\n")
+
+#06 - SETS (Conjuntos) - Estructura fija de datos.
+print("### 06 - DATOS DE TIPO SETS ###\n")
+
+conjunto_vacio = set()
+conjunto_vacio1 = {}
+conjunto_colores = set({"Azul", "Rojo", "Verde"})
+conjunto_animales = {"Gato", "Perro", "Loro"}
+
+print("\"conjuto_colores\" es de tipo:", type(conjunto_colores))
+print("\"conjuto_vacio1\" es de tipo:", type(conjunto_vacio1))
+print("\"conjuto_colores\" es de tipo:", type(conjunto_colores))
+print("\"conjuto_animales\" es de tipo:", type(conjunto_animales), "\n")
+
+#print(conjunto_animales[0]) #Accediendo al primer elemento del set
+conjunto_colores.add("Celeste")
+print("El set de colores lo conforman:", conjunto_colores)
+
+conjunto_animales.add("Gato")
+print("El set de animales lo conforman:", conjunto_animales)
+
+
+
 
 
 

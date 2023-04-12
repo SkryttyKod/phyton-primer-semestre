@@ -158,7 +158,10 @@ conjunto_colores.add("Celeste")
 print("El set de colores lo conforman:", conjunto_colores)
 
 conjunto_animales.add("Gato")
-print("El set de animales lo conforman:", conjunto_animales)
+print("El set de animales lo conforman:", conjunto_animales, "\n")
+
+#07 - DICCIONARIOS (Clave-Valor)
+
 
 
 

@@ -161,7 +161,7 @@ conjunto_animales.add("Gato")
 print("El set de animales lo conforman:", conjunto_animales, "\n")
 
 #07 - DICCIONARIOS (Clave-Valor)
-
+print('Prueba de que funciona')
 
 
 

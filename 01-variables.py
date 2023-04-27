@@ -40,6 +40,4 @@ print("### 05 - INTRUCCION INPUT ###\n")
 nickname = input("¿Cual es tu nick?\n") #Realiza la pregunta y espera a que se ingrese una cadena de caracteres la cual sera el valor de la variable "nickname"
 print("\nTu nickname es", nickname, "\n")
 
-###
-
 

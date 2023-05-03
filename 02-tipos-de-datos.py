@@ -82,7 +82,7 @@ print("Esta es una lista de un elemento:", lenguaje)
 print("Esto igual es una lista:", data, "\n")
 
 print("El numero de elementos en la lista \"data\" es de:", len(data)) #Cuenta elementos dentro de la lista.
-print("¿Cuantas veces esta \"Raul\" en la lista \"grupo\"?", grupo.count("Raul"), "\n") #Cuenta ocurrencias.
+print("¿Cuantas veces esta \"Raul\" en la lista \"grupo\"?", grupo.count("Mariana"), "\n") #Cuenta ocurrencias.
 
 lenguaje = ["Javascript"] #Establece el elemento de la variable "lenguaje" en "Javascript" (Antes "Phyton").
 print("Nuevo valor del arreglo de un elemento:" ,lenguaje, "\n")
@@ -182,9 +182,6 @@ print(diccionario)
 #ELMININANDO CAMPO DE DICCIONARIO
 del diccionario["Nombre"]
 print(diccionario)
-
-#DICCIONARIOS
-
 
 
 

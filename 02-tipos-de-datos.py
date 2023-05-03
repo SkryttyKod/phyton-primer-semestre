@@ -162,7 +162,28 @@ print("El set de animales lo conforman:", conjunto_animales, "\n")
 
 #07 - DICCIONARIOS (Clave-Valor)
 print('Prueba de que funciona')
+diccionario={
+    "Nombre":"Pepe",
+    "Institucion":"Escuela",
+    "Edad":4,
+    "colores": {"rojo","azul"}
+}
+print(diccionario)
+print(
+    "hola "
+    "esto es una "
+    "prueba"
+)
+ #ACTUALIZAR VALOR DE UN DICCIONARIO
+print(diccionario["Nombre"])
+diccionario["Nombre"]= "Matias"
+print(diccionario)
 
+#ELMININANDO CAMPO DE DICCIONARIO
+del diccionario["Nombre"]
+print(diccionario)
+
+#DICCIONARIOS
 
 
 

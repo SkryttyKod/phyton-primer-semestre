@@ -73,6 +73,9 @@ print ("¿c es menor que d?:",c < d,"\n")
 
 print('### 01 - Comparando strings ###\n')
 
+# Compara los caracteres por orden alfabetico.
+# Orden lexico de cada letra (valor numerico por letra = ASCII)
+
 anim_dom = "perro"
 anim_salv = "tigre"
 
@@ -81,11 +84,51 @@ print(anim_dom != anim_salv)
 print(anim_dom > anim_salv)
 print(anim_dom < anim_salv,'\n')
 
-#TAREA COMPARAR CADENAS DE TEXTO Y AVERIGUAR POR QUÉ DA TRUE O FALSE
+print('Comparando Numeros')
 
-#BUCLES
+palabra = 'AAAA'
+for ch in palabra:
+    print(ch + ' = ' + str(ord(ch)))
 
-#if es "Si"
-#else es "Sino"
-#elif es "Sino si"
+palabra = 'aaaa'
+for ch in palabra:
+    print(ch + ' = ' + str(ord(ch)))
+
+# OPERADORES LOGICOS
+
+bencina = True
+encendido = True
+edad = 19
+
+# Utilizando el opreador AND
+if bencina and encendido:
+    print('El vehiculo puede avanzar.')
+else:
+    print('El vehiculo no puede arrancar.')
+
+# Utilizando operador OR
+if bencina or encendido:
+    print('El vehiculo puede avanzar.')
+else:
+    print('El vehiculo no puede arrancar.')
+
+# Utilizando el operador NOT junto al AND
+if not bencina and encendido:
+    print('El vehiculo puede avanzar.')
+else:
+    print('El vehiculo no puede arrancar.')
+
+# Utilizando el operador NOT junto al OR
+if not bencina or encendido:
+    print('El vehiculo puede avanzar.')
+else:
+    print('El vehiculo no puede arrancar.')
+
+# Utilizando NOT junto AND y OR
+if not bencina or (encendido and edad >= 18):
+    print('El vehiculo puede arrancar.')
+else:
+    print('El vehiculo no puede arrancar.')
+     
+
 

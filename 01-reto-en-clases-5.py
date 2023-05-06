@@ -1,4 +1,3 @@
-
 # DECLARANDO TUPLAS
 patient_name = ()
 patient_age = ()
@@ -122,6 +121,3 @@ patient_3 += (patient_name[2],patient_age[2],patient_weight[2],patient_height[2]
 print(patient_1)
 print(patient_2)
 print(patient_3)
-
-
-#tupla_nums += (user_num,)

@@ -1,3 +1,5 @@
+### 03 - RETO EN CLASES ###
+
 # Elaborar un algoritmo que sea capaz de solicitar por teclado los nombres de tres pacientes,
 # sus pesos, su altura y su edad correspondientes. La edad del paciente solo debe permitir enteros
 # y debe ser valida. Toda la informacion debe guardarse en tuplas.

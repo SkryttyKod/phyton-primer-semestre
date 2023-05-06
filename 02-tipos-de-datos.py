@@ -43,7 +43,7 @@ print("### 03 - DATOS DE TIPO BOLEANOS ###\n")
 ampolleta = False #La variable "ampolleta" esta encendida.
 interruptor = True #La variable "interruptor" esta apagada.
 
-print("La variable \"ampolleta\" es de tipo:", type(ampolleta), "\n") #Type para saber el tipo de variable.
+print("La variable \"ampolleta\" es de tipo:", type(ampolleta)) #Type para saber el tipo de variable.
 print("La variable \"estatura\" es de tipo:", type(estatura)) #Type para saber el tipo de variable.
 print("La variable \"peso\" es de tipo:", type(peso)) #Type para saber el tipo de variable.
 print("La variable \"complejo\" es de tipo:", type(complejo))  #Type para saber el tipo de variable.
@@ -57,13 +57,13 @@ num = [1,2,3,4,5,6] #Inicia una variable como una lista de elementos int.
 print("Los estudiantes son:", estudiantes) #Imprime la variable "estudiantes" que es una lista.
 print("Los numeros de un dado son:", num, "\n") #Imprime la variable "num" que es una lista.
 
-nueva_lista = list () #Inicia una lista vacia.
-print("Esta es una lista vacia:" ,nueva_lista) #Imprime la lista vacia.
+empty_list = list() #Inicia una lista vacia.
+print("Esta es una lista vacia:" ,empty_list) #Imprime la lista vacia.
 
-otra_lista = [] #Inicia otra lista vacia.
-print("Esta es otra lista:" ,otra_lista) #Imprime otra lista vacia.
-print("La variable \"nueva_lista\" es de tipo:", type(nueva_lista))
-print("La variable \"otra_lista\" es de tipo:", type(otra_lista), "\n")
+other_empty_list = [] #Inicia otra lista vacia.
+print("Esta es otra lista vacia:" ,other_empty_list) #Imprime otra lista vacia.
+print("La variable \"empty_list\" es de tipo:", type(empty_list))
+print("La variable \"other_empty_list\" es de tipo:", type(other_empty_list), "\n")
 
 #Declaramos otras listas.
 grupo = ["Priscilla", "Raul", "Mariana", "Renato", "Raul"]
@@ -99,10 +99,13 @@ print("El arreglo de estudiantes es:" ,estudiantes)
 #Asigna valores de una lista a variables
 data_asig = [10023, "Programacion", 1, True]
 cod,ramo,semestre,estado = data_asig
-print(ramo)
+print('Codigo:',cod)
+print('Ramo:',ramo)
+print('Semestre:',semestre)
+print('Estado:',estado)
 
 #¿Se pueden sumar listas?
-print("Suma de listas:" ,estudiantes + num)
+print("\nSuma de listas:" ,estudiantes + num)
 
 #¿Que hace estas funciones?
 print(list("Phyton")) #Transforma el str "Phyton" en una lista.
@@ -117,8 +120,8 @@ print("La variable \"grupo1\" es de tipo:", type(grupo1))
 
 grupo2 = ("Diego", "Boris", "2020", "Alberto", "100", "Pedro")
 
-#Accediendo al primer elemenot de la tupla.
-print(grupo1[0])
+#Accediendo al primer elemento de la tupla.
+print('El elemento 1 de "grupo1" es:',grupo1[0])
 
 #Consultando el elemento Daniel cuantas veces se encuentra en la tupla
 print("El elemento \"Daniel\" se repite:", grupo1.count("Daniel"), "veces")
@@ -133,7 +136,7 @@ print("El indice del elemento \"Daniel\" es:", grupo1.index("Daniel"))
 #Se pueden sumar las tuplas
 print("Suma de tuplas:", grupo1 + grupo2)
 
-#obteniedo un trozo de la tupla
+#Obteniedo un trozo de la tupla
 print("Trozo de la tupla:", grupo2[0:3])
 
 #¿Entonces como no puedo modificar una tupla?
@@ -161,7 +164,8 @@ conjunto_animales.add("Gato")
 print("El set de animales lo conforman:", conjunto_animales, "\n")
 
 #07 - DICCIONARIOS (Clave-Valor)
-print('Prueba de que funciona')
+print("### 06 - DATOS DE TIPO DICCIONARIO ###\n")
+print('Prueba de que funciona: ')
 diccionario={
     "Nombre":"Pepe",
     "Institucion":"Escuela",
@@ -174,12 +178,12 @@ print(
     "esto es una "
     "prueba"
 )
- #ACTUALIZAR VALOR DE UN DICCIONARIO
+ #Actualizar valor de un diccionario.
 print(diccionario["Nombre"])
 diccionario["Nombre"]= "Matias"
 print(diccionario)
 
-#ELMININANDO CAMPO DE DICCIONARIO
+#Eliminando campo de un diccionario.
 del diccionario["Nombre"]
 print(diccionario)
 

@@ -71,14 +71,13 @@ print ("¿b es menor que a?:",b < a)
 print ("¿c es menor que d?:",c > d)
 print ("¿c es menor que d?:",c < d,"\n")
 
-print('### 01 - Comparando strings ###\n')
-
-# Compara los caracteres por orden alfabetico.
-# Orden lexico de cada letra (valor numerico por letra = ASCII)
+print('### 02 - Comparando strings ###\n')
 
 anim_dom = "perro"
 anim_salv = "tigre"
 
+# Compara los caracteres por orden alfabetico.
+# Orden lexico de cada letra (valor numerico por letra = ASCII)
 print(anim_dom == anim_salv)
 print(anim_dom != anim_salv)
 print(anim_dom > anim_salv)
@@ -94,7 +93,8 @@ palabra = 'aaaa'
 for ch in palabra:
     print(ch + ' = ' + str(ord(ch)))
 
-# OPERADORES LOGICOS
+#03 - OPERADORES LOGICOS
+print('\n########## OPERADORES LOGICOS ##########\n')
 
 bencina = True
 encendido = True

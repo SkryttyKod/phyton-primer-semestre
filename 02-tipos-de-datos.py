@@ -49,6 +49,14 @@ print("La variable \"peso\" es de tipo:", type(peso)) #Type para saber el tipo d
 print("La variable \"complejo\" es de tipo:", type(complejo))  #Type para saber el tipo de variable.
 print("La variable \"carrera\" es de tipo:", type(carrera), "\n")  #Type para saber el tipo de variable.
 
+#Podemos transformar cualquier valor a un Booleano (al igual que un string.)
+print(bool(0))
+print(bool(""))
+print(bool(None))
+print(bool("True"))
+print(bool(1))
+print(bool("\n"),"\n")
+
 #04 - DATOS DE TIPO ARRAY (Objetos de Tipo Coleccion)
 print("### 04 - DATOS DE TIPO LISTAS ###\n")
 

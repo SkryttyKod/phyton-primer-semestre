@@ -38,15 +38,15 @@ print('- Elimina los repetidos:', nums_txt)
 print('')
 
 # Ordena los numeros de la lista de menor a mayor.
-nums_sorted = sorted(nums_no_repeat)
+nums_sorted = sorted(nums)
 
 # ======== Calcular la media y la mediana ======== #
 # Media
-mean = (nums_sorted[0]+nums_sorted[1]+nums_sorted[2]+nums_sorted[3]+nums_sorted[4]+nums_sorted[5]+nums_sorted[6]+nums_sorted[7]) / 8
+mean = (nums_sorted[0]+nums_sorted[1]+nums_sorted[2]+nums_sorted[3]+nums_sorted[4]+nums_sorted[5]+nums_sorted[6]+nums_sorted[7]+nums_sorted[8]) / 9
 
 # Mediana
-median = (nums_sorted[3]+nums_sorted[4]) / 2
+median = (nums_sorted[4])
 
-print(' Media:', mean)
+print(' Media:', round(mean, 2))
 print(' Mediana:', median)
 print()

@@ -30,9 +30,8 @@ nums_txt = ', '.join(str(num) for num in nums)
 print('- Agrega "2" en la 1era pos.:', nums_txt)
 
 # Elimina numeros duplicados.
-for i in nums:
-    if i not in nums_no_repeat:
-        nums_no_repeat.append(i)
+
+nums_no_repeat = set(nums)
 nums_txt = ', '.join(str(num) for num in nums_no_repeat)
 print('- Elimina los repetidos:', nums_txt)
 print('')
@@ -43,6 +42,7 @@ nums_sorted = sorted(nums)
 # ======== Calcular la media y la mediana ======== #
 # Media
 mean = sum(nums_sorted) / len(nums_sorted)
+print('Mediana:', round(mean, 2))
 
 # Mediana
 if len(sorted(nums_sorted)) % 2 == 0:

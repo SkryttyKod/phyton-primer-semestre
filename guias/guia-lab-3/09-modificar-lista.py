@@ -42,11 +42,16 @@ nums_sorted = sorted(nums)
 
 # ======== Calcular la media y la mediana ======== #
 # Media
-mean = (nums_sorted[0]+nums_sorted[1]+nums_sorted[2]+nums_sorted[3]+nums_sorted[4]+nums_sorted[5]+nums_sorted[6]+nums_sorted[7]+nums_sorted[8]) / 9
+mean = sum(nums_sorted) / len(nums_sorted)
 
 # Mediana
-median = (nums_sorted[4])
+if len(sorted(nums_sorted)) % 2 == 0:
+    median_pos_1 = (len(nums_sorted) // 2) - 1
+    median_pos_2 = median_pos_1 + 1
+    median = (nums_sorted[median_pos_1] + nums_sorted[median_pos_2]) / 2
+    print('Mediana:', median)
 
-print(' Media:', round(mean, 2))
-print(' Mediana:', median)
-print()
+else:
+    mediana_pos = (len(nums_sorted) // 2)
+    mediana = nums_sorted[mediana_pos]
+    print('Mediana:', mediana)

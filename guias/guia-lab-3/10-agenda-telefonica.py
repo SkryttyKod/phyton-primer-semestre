@@ -6,46 +6,39 @@
 # Instagram y Twitter). Por ultimo, se solicita imprimir solamente el Facebook del
 # contacto y luego la agenda completa actualizada.
 
+# Titulo.
+print('\n##### Modificar una lista #####\n')
+
 # ======== Diccionarios ======== #
-# Iniciando la Agenda Telefonica (Diccionario)
-tel_book = {
-    'Mati G':{
-        'Nombre':'Matias Guzman',
-        'Direccion':'Cuba #1298',
-        'Ciudad':'Osorno',
-        'Num. tel.':'+56 9 3333 3333',
-    }
+# Agenda principal.
+agenda = {
+    'Nombre'    : 'Matias Guzman',
+    'Direccion' : 'Cuba #1298',
+    'Ciudad'    : 'Osorno',
+    'Num tel.'  : '+569 9324 4232'
 }
 
-# Establece el contenido de la clave "RRSS"
-rrss_dicc = {'Facebook':'fb.com/Matias.Guzman',
-            'Instagram':'@MatiasG',
-            'Twitter': '@matiG'}
+# Clave Redes sociales.
+RRSS = {
+    'Facebook'   : '/mati.guz_1',
+    'Instragram' : '@mati.guz_2',
+    'Twitter'    : '/mati.guz_3'
+}
 
-# ======== Mostrar en pantalla ======== #
-print('\n##### Agenda Telefonica #####\n')
+# ======== Imprime el facebook ======== #
+print('Facebook:', RRSS['Facebook'], '\n')
 
-# Imprime la agenda original
-print('= Agenda original =')
-print('Mati G:')
-for key, value in tel_book['Mati G'].items():
-    print(f'{key}: {value}')
-print('')
 
-# Añade una clave "RRSS" a la clave "Mati G." que tendra el valor de "rrss_dicc"
-tel_book['Mati G']['RRSS'] = rrss_dicc
+# Asigna el dict "RRSS" a "agenda"
+agenda['RRSS'] = RRSS
 
-# Extrae el Facebook del contacto.
-fb_contact = tel_book['Mati G']['RRSS']['Facebook']
+# ======== Imprime la agenda ======== #
+for i, k in agenda.items():
+    if i != 'RRSS':
+        print(i, ': ', k, sep='')
 
-# Muestra el facebook
-print('= Facebook =')
-print(fb_contact)
-print()
+print('\nRedes sociales:')
+for i, k in RRSS.items():
+    print(i, ': ', k, sep='')
 
-# Imprime la agenda modificada
-print('= Agenda modificada =')
-print('Mati G:')
-for key, value in tel_book['Mati G'].items():
-    print(f'{key}: {value}')
 print()

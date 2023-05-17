@@ -42,7 +42,7 @@ nums_sorted = sorted(nums)
 # ======== Calcular la media y la mediana ======== #
 # Media
 mean = sum(nums_sorted) / len(nums_sorted)
-print('Mediana:', round(mean, 2))
+print('Media:', round(mean, 2))
 
 # Mediana
 if len(sorted(nums_sorted)) % 2 == 0:

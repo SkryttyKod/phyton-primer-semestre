@@ -1,4 +1,4 @@
-### 00 - RETO EN CLASES ###
+### 01 - RETO EN CLASES ###
 
 # Escribe un programa que le pregunte al usuario su nombre y edad, 
 # y luego calcule e imprima cuántos años tendrá en 20 años. 

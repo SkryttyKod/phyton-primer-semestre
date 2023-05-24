@@ -1,4 +1,4 @@
-### 02 - RETO EN CLASES ###
+### 03 - RETO EN CLASES ###
 
 # Escriba un programa que incluya una lista de nombres de ciudades en Chile y una lista de índices de calidad del aire (ICA),
 # para cada ciudad. El programa debe determinar el nombre de la ciudad con el índice de calidad del aire más bajo y 

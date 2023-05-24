@@ -1,4 +1,4 @@
-### 01 - RETO EN CLASES ###
+### 02 - RETO EN CLASES ###
 
 # Escribe un programa que le pida al usuario el nombre del estudiante, el nombre de la asignatura, 
 # la nota del laboratorio 1 y la nota del laboratorio 2. El programa debe calcular la nota final como el 30% 
